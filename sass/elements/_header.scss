@@ -1,0 +1,19 @@
+@import '../mixins';
+
+header{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+
+}
+
+.header-container{
+  @include flex-between;
+}
+
+@media (max-width: 992px){
+  header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B3B2AD;
+  }
+}

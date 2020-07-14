@@ -1,0 +1,45 @@
+@import '../mixins';
+
+.nav{
+  @include regular-font;
+  @include flex-between;
+
+  font-size: 18px;
+
+  p{
+    margin-bottom: 0;
+  }
+
+  .toggle{
+    width: 30px;
+    height: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 20px;
+
+    cursor: pointer;
+    span{
+      height: 3px;
+      @include main-color;
+      display: block;
+      background-color: black;
+      &:first-child{
+        width: 100%;
+      }
+      &:last-child{
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .nav{
+    p{
+      display: none;
+    }
+  }
+}

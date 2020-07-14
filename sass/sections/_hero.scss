@@ -1,0 +1,33 @@
+@import '../mixins';
+
+.hero{
+  height: 800px;
+}
+
+.hero-labels{
+  p{
+    @include regular-font;
+
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    
+    color: #B3B2AD;
+
+    b{
+      @include main-color;
+      font-weight: 600;
+    }
+
+    // span{
+    //   @include main-color;
+    // }
+    
+  }
+
+  &:last-child{
+    p{
+      text-align: end;
+    }
+  }
+}

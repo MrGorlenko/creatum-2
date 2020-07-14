@@ -1,0 +1,22 @@
+@mixin regular-font{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  color: #272727;
+}
+
+@mixin title-font{
+  font-family: Anglecia Pro Title;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin flex-between{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin main-color{
+  color: #272727;
+}
