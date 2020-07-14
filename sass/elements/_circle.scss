@@ -3,6 +3,7 @@
 $circle: 100px;
 $wider: $circle*12;
 
+
 .circle-container{
   position: absolute;
 
@@ -21,8 +22,6 @@ $wider: $circle*12;
   @include dark-bg;
 
   transition: .5s ease;  
-
-  // z-index: -1;
 }
 
 .wider{
@@ -31,4 +30,72 @@ $wider: $circle*12;
   margin-top: calc(#{-$wider}/2);
 
   transition: 1.5s ease;
+}
+
+@media (max-width: 1200px){
+  $circle: 80px;
+  $wider: $circle*12;
+
+  .circle{
+    width: $circle;
+    height: $circle;
+    margin-top: calc(#{-$circle}/2);
+  }
+  
+  .wider{
+    width: $wider;
+    height: $wider;
+    margin-top: calc(#{-$wider}/2);
+  }
+}
+
+@media (max-width: 993px){
+  $circle: 70px;
+  $wider: $circle*12;
+
+  .circle{
+    width: $circle;
+    height: $circle;
+    margin-top: calc(#{-$circle}/2);
+  }
+  
+  .wider{
+    width: $wider;
+    height: $wider;
+    margin-top: calc(#{-$wider}/2);
+  }
+}
+
+@media (max-width: 768px){
+  $circle: 50px;
+  $wider: $circle*8;
+
+  .circle{
+    width: $circle;
+    height: $circle;
+    margin-top: calc(#{-$circle}/2);
+  }
+  
+  .wider{
+    width: $wider;
+    height: $wider;
+    margin-top: calc(#{-$wider}/2);
+  }
+}
+
+@media (max-width: 576px){
+  $circle: 60px;
+  $wider: $circle*7;
+
+  .circle{
+    width: $circle;
+    height: $circle;
+    margin-top: calc(#{-$circle}/2);
+  }
+  
+  .wider{
+    width: $wider;
+    height: $wider;
+    margin-top: calc(#{-$wider}/2);
+  }
 }

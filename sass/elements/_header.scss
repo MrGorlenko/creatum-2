@@ -1,11 +1,9 @@
 @import '../mixins';
 
 header{
-  // padding-top: 2.5%;
-  // padding-bottom: 2.5%;
   height: 4vh;
   margin-top: 3vh;
-  padding-bottom: 3vh;
+  margin-bottom: 3vh;
 
 }
 
@@ -16,6 +14,6 @@ header{
 @media (max-width: 992px){
   header{
     border-bottom: 1px solid #B3B2AD;
-    padding-bottom: 5vh;
+    padding-bottom: 40px;
   }
 }

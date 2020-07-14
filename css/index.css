@@ -1,7 +1,7 @@
 header {
   height: 4vh;
   margin-top: 3vh;
-  padding-bottom: 3vh;
+  margin-bottom: 3vh;
 }
 
 .header-container {
@@ -13,7 +13,7 @@ header {
 @media (max-width: 992px) {
   header {
     border-bottom: 1px solid #B3B2AD;
-    padding-bottom: 5vh;
+    padding-bottom: 40px;
   }
 }
 
@@ -197,6 +197,58 @@ header {
   transition: 1.5s ease;
 }
 
+@media (max-width: 1200px) {
+  .circle {
+    width: 80px;
+    height: 80px;
+    margin-top: calc(-80px/2);
+  }
+  .wider {
+    width: 960px;
+    height: 960px;
+    margin-top: calc(-960px/2);
+  }
+}
+
+@media (max-width: 993px) {
+  .circle {
+    width: 70px;
+    height: 70px;
+    margin-top: calc(-70px/2);
+  }
+  .wider {
+    width: 840px;
+    height: 840px;
+    margin-top: calc(-840px/2);
+  }
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 50px;
+    height: 50px;
+    margin-top: calc(-50px/2);
+  }
+  .wider {
+    width: 400px;
+    height: 400px;
+    margin-top: calc(-400px/2);
+  }
+}
+
+@media (max-width: 576px) {
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin-top: calc(-60px/2);
+  }
+  .wider {
+    width: 420px;
+    height: 420px;
+    margin-top: calc(-420px/2);
+  }
+}
+
 .hero {
   height: 90vh;
 }
@@ -223,7 +275,7 @@ header {
 
 @media (max-width: 992px) {
   .hero {
-    height: 80vh;
+    height: 85vh;
   }
   #right-label {
     margin-top: 1rem;
@@ -231,7 +283,7 @@ header {
 }
 
 .about {
-  height: 700px;
+  height: 100vh;
   background-color: #272727;
   position: relative;
 }

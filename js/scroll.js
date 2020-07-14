@@ -3,10 +3,9 @@ $(document).ready(function(){
 
   let ourScene = new ScrollMagic.Scene({
     triggerElement: '#about',
-    // duration: '120%',
     triggerHook: 0.9
   })
   .setClassToggle('#circle', 'wider')
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 })
