@@ -286,6 +286,9 @@ header {
   .hero p {
     font-size: 20px;
   }
+  .hero p br {
+    display: none;
+  }
 }
 
 .about {
