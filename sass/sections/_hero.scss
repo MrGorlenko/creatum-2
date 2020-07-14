@@ -2,6 +2,9 @@
 
 .hero{
   height: 90vh;
+  .container-xl{
+    height: 100% !important;
+  }
 }
 
 .hero-labels{
@@ -40,8 +43,13 @@
 
 @media (max-width: 576px){
   .hero{
+    .container-xl{
+      height: 90% !important;
+    }
     p{
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 0;
       br{
         display: none;
       }

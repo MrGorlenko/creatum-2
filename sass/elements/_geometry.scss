@@ -124,15 +124,19 @@ $inner-border-bottom: 194px;
       border-bottom: $base-border-bottom solid black;
       border-left: calc(#{$base-border-bottom}/2) solid transparent;
 
+      p{
+        font-size: 18px;
+      }
+
       .design{
         top: -30px;
       }
       .marketing{
-        top: 160px;
+        top: 130px;
         left: -90px;
       }
       .websites{
-        top: 160px;
+        top: 130px;
         right: -90px;
       }
     }

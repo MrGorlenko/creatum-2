@@ -162,15 +162,18 @@ header {
     border-bottom: 120px solid black;
     border-left: calc(120px/2) solid transparent;
   }
+  .geometry .triangle p {
+    font-size: 18px;
+  }
   .geometry .triangle .design {
     top: -30px;
   }
   .geometry .triangle .marketing {
-    top: 160px;
+    top: 130px;
     left: -90px;
   }
   .geometry .triangle .websites {
-    top: 160px;
+    top: 130px;
     right: -90px;
   }
   .geometry .triangle-inner {
@@ -265,6 +268,10 @@ header {
   height: 90vh;
 }
 
+.hero .container-xl {
+  height: 100% !important;
+}
+
 .hero-labels p {
   font-family: Montserrat;
   font-style: normal;
@@ -295,8 +302,13 @@ header {
 }
 
 @media (max-width: 576px) {
+  .hero .container-xl {
+    height: 90% !important;
+  }
   .hero p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .hero p br {
     display: none;
