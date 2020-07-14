@@ -11,6 +11,8 @@ $inner-border-bottom: 194px;
   align-items: center;
   justify-content: center;
 
+  width: 460px;
+
   .active{
     opacity: 1 !important;
     transition: opacity .5s ease !important; 
@@ -76,6 +78,9 @@ $inner-border-bottom: 194px;
   $inner-border-bottom: 144px;
 
   .geometry{
+
+    width: 360px;
+
     .triangle{
   
       position: relative;
@@ -107,6 +112,7 @@ $inner-border-bottom: 194px;
 
 @media (max-width: 993px){
   .geometry{
+    margin: auto;
     .triangle{
       .design{
         top: -30px;
@@ -120,5 +126,11 @@ $inner-border-bottom: 194px;
         right: -90px;
       }
     }
+  }
+}
+
+@media (max-width: 360px){
+  .geometry{
+    width: auto;
   }
 }

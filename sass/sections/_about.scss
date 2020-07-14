@@ -1,0 +1,8 @@
+@import '../mixins';
+
+.about{
+  height: 700px;
+  @include dark-bg;
+
+  position: relative;
+}
