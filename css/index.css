@@ -13,7 +13,7 @@ header {
 @media (max-width: 992px) {
   header {
     border-bottom: 1px solid #B3B2AD;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -275,10 +275,16 @@ header {
 
 @media (max-width: 992px) {
   .hero {
-    min-height: 95vh;
+    min-height: 85vh;
   }
   #right-label {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero p {
+    font-size: 20px;
   }
 }
 
