@@ -14,6 +14,7 @@ header {
   header {
     border-bottom: 1px solid #B3B2AD;
     padding-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -154,6 +155,12 @@ header {
 @media (max-width: 993px) {
   .geometry {
     margin: auto;
+    width: 300px;
+  }
+  .geometry .triangle {
+    border-right: calc(120px/2) solid transparent;
+    border-bottom: 120px solid black;
+    border-left: calc(120px/2) solid transparent;
   }
   .geometry .triangle .design {
     top: -30px;
@@ -165,6 +172,11 @@ header {
   .geometry .triangle .websites {
     top: 160px;
     right: -90px;
+  }
+  .geometry .triangle-inner {
+    border-left: calc(114px/2) solid transparent;
+    border-bottom: 114px solid white;
+    border-right: calc(114px/2) solid transparent;
   }
 }
 

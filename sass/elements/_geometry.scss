@@ -111,9 +111,19 @@ $inner-border-bottom: 194px;
 }
 
 @media (max-width: 993px){
+
+  $base-border-bottom: 120px;
+  $inner-border-bottom: 114px;
+
   .geometry{
     margin: auto;
+    width: 300px;
     .triangle{
+
+      border-right: calc(#{$base-border-bottom}/2) solid transparent;
+      border-bottom: $base-border-bottom solid black;
+      border-left: calc(#{$base-border-bottom}/2) solid transparent;
+
       .design{
         top: -30px;
       }
@@ -125,6 +135,12 @@ $inner-border-bottom: 194px;
         top: 160px;
         right: -90px;
       }
+    }
+
+    .triangle-inner{
+      border-left: calc(#{$inner-border-bottom}/2) solid transparent;
+      border-bottom: $inner-border-bottom solid white;
+      border-right: calc(#{$inner-border-bottom}/2) solid transparent;
     }
   }
 }
