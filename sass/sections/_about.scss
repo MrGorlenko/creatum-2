@@ -1,7 +1,8 @@
 @import '../mixins';
+@import '../variables';
 
-$about-height: 100vh;
 $side-padding: 60px;
+$fixing-padding: 5px;
 
 .about__left_none{
   overflow: hidden;
@@ -26,7 +27,7 @@ $side-padding: 60px;
 
 .about{
 
-  height: $about-height;
+  height: $dark-height;
   @include dark-bg;
 
   position: relative;
@@ -44,9 +45,7 @@ $side-padding: 60px;
 
     h3{
       @include title-font;
-      font-size: 50px;
-      line-height: 50px;
-      color: #FCFBF7;
+      @include dark-title-params;
       margin-bottom: 30px;
     }
 
@@ -60,6 +59,7 @@ $side-padding: 60px;
       span{
         margin-left: 23px;
         margin-top: 1px;
+        margin-right: 5px;
       }
     }
 
@@ -67,24 +67,33 @@ $side-padding: 60px;
       padding-top: 20vh;
       text-align: end;
       padding-right: $side-padding;
+      p,h3,a{
+        padding-right: $fixing-padding;
+      }
     }
 
     &:last-child{
       padding-top: 45vh;
       text-align: start;
       padding-left: $side-padding;
+      p,h3,a{
+        padding-left: $fixing-padding;
+      }
     }
   }
 }
 
 @media (max-width: 992px){
-  $about-height: 700px;
   .about{
-    height: $about-height;
+    height: $dark-height;
     &__content{
       &:first-child, &:last-child{
         text-align: center;
         padding: 0;
+        p,h3,a{
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
       &:first-child{
         padding-top: 105px;
@@ -97,24 +106,8 @@ $side-padding: 60px;
         font-size: 18px;
       }
 
-      h3{
-        font-size: 36px;
-        line-height: 36px;
-        margin-bottom: 20px;
-      }
-
       a{
         font-size: 14px;
-      }
-    }
-  }
-}
-
-@media (max-width: 360px){
-  .about{
-    &__content{
-      h3{
-        font-size: 32px;
       }
     }
   }

@@ -1,4 +1,4 @@
-@import '../sections/about';
+@import '../variables';
 
 .line-container{
   width: 100%;
@@ -20,7 +20,7 @@
 }
 
 .full-line{
-  height: $about-height;
+  height: $dark-height;
   transition: height .5s ease;
 }
 
