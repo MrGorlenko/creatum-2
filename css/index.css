@@ -320,7 +320,7 @@ header {
 .logo {
   width: 163px;
   height: 28px;
-  background-image: url("../../img/logo.svg");
+  background-image: url("../img/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -328,7 +328,7 @@ header {
 }
 
 .logo-white {
-  background-image: url("../../img/logo-white.svg");
+  background-image: url("../img/logo-white.svg");
   transition: background-image .4s ease;
 }
 
@@ -586,7 +586,7 @@ header {
   width: 8px;
   height: 8px;
   content: '';
-  background-image: url("../../img/rhomb.svg");
+  background-image: url("../img/rhomb.svg");
   left: -20px;
   top: 12px;
 }
