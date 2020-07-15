@@ -12,6 +12,7 @@ $inner-border-bottom: 194px;
   justify-content: center;
 
   width: 460px;
+  margin: auto;
 
   .active{
     opacity: 1 !important;
@@ -79,7 +80,7 @@ $inner-border-bottom: 194px;
 
   .geometry{
 
-    width: 360px;
+    width: 100%;
 
     .triangle{
   
@@ -116,7 +117,6 @@ $inner-border-bottom: 194px;
   $inner-border-bottom: 114px;
 
   .geometry{
-    margin: auto;
     width: 300px;
     .triangle{
 

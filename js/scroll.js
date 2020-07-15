@@ -41,4 +41,22 @@ $(document).ready(function(){
   .setClassToggle('#line', 'full-line')
   // .addIndicators()
   .addTo(controller);
+
+  let aboutLeft = new ScrollMagic.Scene({
+    triggerElement: '#about',
+    triggerHook: 0.3
+  })
+
+  .setClassToggle('#about-left p, #about-left h3, #about-left a', 'about_active')
+  // .addIndicators()
+  .addTo(controller);
+
+  let aboutRight = new ScrollMagic.Scene({
+    triggerElement: '#about',
+    triggerHook: 0.2
+  })
+
+  .setClassToggle('#about-right p, #about-right h3, #about-right a', 'about_active')
+  // .addIndicators()
+  .addTo(controller);
 })
