@@ -1,0 +1,29 @@
+@import 'circle';
+@import '../mixins';
+
+.label-container{
+  position: absolute;
+
+  width: 100%;
+  bottom: calc(#{$circle}/2.5);
+
+  @include flex-center;
+  flex-direction: column;
+  p{
+    @include regular-font;
+    margin-bottom: 0;
+    font-weight: 100;
+  }
+
+  div{
+    width: 1.5px;
+    height: calc(#{$circle});
+    @include dark-bg;
+  }
+}
+
+@media (max-width: 992px){
+  .label-container{
+    display: none !important;
+  }
+}

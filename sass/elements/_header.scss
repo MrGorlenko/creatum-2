@@ -5,6 +5,19 @@ header{
   margin-top: 3vh;
   margin-bottom: 3vh;
 
+  position: fixed;
+  width: 100%;
+
+  opacity: 1;
+  transition: opacity .4s ease;
+
+  z-index: 5;
+
+}
+
+.header-off{
+  opacity: 0;
+  transition: opacity .4s ease;
 }
 
 .header-container{
@@ -13,8 +26,6 @@ header{
 
 @media (max-width: 992px){
   header{
-    border-bottom: 1px solid #B3B2AD;
-    padding-bottom: 20px;
-    margin-bottom: 0;
+    display: none !important;
   }
 }

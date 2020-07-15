@@ -25,25 +25,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 </head>
 <body>
-  <header>
+  <header id='header'>
 
     <div class="container-xl header-container">
-      <img src="img/logo.svg" alt="" class="logo">
+      <!-- <img src="img/logo.svg" alt="" class="logo"> -->
+      <a id='logo' href="#" class="logo"></a>
 
-      <div class="nav">
-        <p>Menu </p>
-        <div class='toggle'>
-          <span></span>
-          <span></span>
+      <div id='nav' class="nav">
+        <p id='menu'>Menu </p>
+        <div id='#toggle' class='toggle'>
+          <span class='nav-span'></span>
+          <span class='nav-span'></span>
         </div>
       </div>
     </div>
 
+  </header>
+
+  <header class="header-mobile">
+    <div class="container-md header-container">
+      <img src="img/logo.svg" alt="">
+      <div class="nav">
+        <div class='toggle'>
+          <span class='nav-span-mobile'></span>
+          <span class='nav-span-mobile'></span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <section class="hero">
@@ -82,11 +98,20 @@
         </div>
       </div>
     </div>
+
+    <div class="label-container">
+      <p>scroll</p>
+      <div class="line-down"></div>
+    </div>
+
   </section>
 
   <section class="about" id='about'>
     <div class="circle-container">
       <div id='circle' class="circle"></div>
+    </div>
+    <div class="line-container">
+      <div id='line' class="line"></div>
     </div>
   </section>
 

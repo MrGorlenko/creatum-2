@@ -1,7 +1,9 @@
 @import '../mixins';
 
+$about-height: 100vh;
+
 .about{
-  height: 100vh;
+  height: $about-height;
   @include dark-bg;
 
   position: relative;

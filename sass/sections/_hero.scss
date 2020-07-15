@@ -1,7 +1,7 @@
 @import '../mixins';
 
 .hero{
-  height: 90vh;
+  height: 100vh;
   .container-xl{
     height: 100% !important;
   }
@@ -34,6 +34,7 @@
 @media (max-width: 992px){
   .hero{
     min-height: 85vh;
+    padding-top: 69px;
   }
 
   #right-label{
