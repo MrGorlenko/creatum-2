@@ -39,6 +39,10 @@
   }
 }
 
+.container-xl{
+  opacity: 1 !important;
+}
+
 @media (min-width: 1500px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1440px !important;

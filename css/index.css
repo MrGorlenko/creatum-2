@@ -512,6 +512,11 @@ header {
   align-self: flex-end;
 }
 
+.slide__content_img .marketing {
+  height: 372px;
+  max-width: 500px;
+}
+
 .slide__content_img a, .slide__content_img hr, .slide__content_img img {
   transition: .3s ease;
 }
@@ -639,6 +644,10 @@ header {
   .slide__content_img img {
     max-width: 100%;
   }
+  .slide__content_img .marketing {
+    height: 414px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -650,6 +659,7 @@ header {
   }
   .slide__content_img img {
     max-width: 400px;
+    max-height: 343px !important;
   }
 }
 
@@ -996,10 +1006,29 @@ header {
   }
 }
 
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   .slider {
     margin-top: -3px;
   }
+}
+
+.section {
+  width: calc(100%/2);
+}
+
+.sections {
+  width: 200%;
+  display: flex;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1440px !important;
 }
 
 .invisible-slide {
@@ -1065,6 +1094,10 @@ header {
   .slide-height {
     height: 980px;
   }
+}
+
+.container-xl {
+  opacity: 1 !important;
 }
 
 @media (min-width: 1500px) {

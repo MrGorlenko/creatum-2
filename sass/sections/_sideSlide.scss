@@ -1,0 +1,13 @@
+.section{
+  width: calc(100%/2);
+}
+
+.sections{
+  width: 200%;
+  display: flex;
+}
+
+.slider-container{
+  position: relative;
+  max-width: 1440px !important;
+}

@@ -28,6 +28,11 @@
       align-self: flex-end;
     }
 
+    .marketing{
+      height: 372px;
+      max-width: 500px;
+    }
+
     a,hr,img{
       transition: .3s ease;
     }
@@ -144,6 +149,10 @@
       img{
         max-width: 100%;
       }
+      .marketing{
+        height: 414px;
+        width: 100%;
+      }
     }
   }
 }
@@ -161,6 +170,7 @@
     &__content_img{
       img{
         max-width: 400px;
+        max-height: 343px !important;
       }
     }
   }
