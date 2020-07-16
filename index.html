@@ -39,8 +39,10 @@
       <div id='nav' class="nav">
         <p id='menu'>Menu </p>
         <div id='#toggle' class='toggle'>
-          <span class='nav-span'></span>
-          <span class='nav-span'></span>
+          <img src="img/line.png" alt="" class="toggle-top">
+          <img src="img/line.png" alt="" class="toggle-bottom">
+          <img src="img/white-line.png" alt="" class="toggle-top toggle-white">
+          <img src="img/white-line.png" alt="" class="toggle-bottom toggle-white">
         </div>
       </div>
     </div>
@@ -48,12 +50,12 @@
   </header>
 
   <header class="header-mobile">
-    <div class="container-md header-container">
+    <div class="container-xl header-container">
       <img src="img/logo.svg" alt="">
       <div class="nav">
-        <div class='toggle'>
-          <span class='nav-span-mobile'></span>
-          <span class='nav-span-mobile'></span>
+        <div id='toggle-mobile' class='toggle'>
+          <img src="img/line.png" alt="" class="toggle-top">
+          <img src="img/line.png" alt="" class="toggle-bottom">
         </div>
       </div>
     </div>
@@ -134,9 +136,8 @@
           <div class="col-lg-7 col-11 slide__content">
             <p>Our services</p>
             <h3>Brand Identity & Design</h3>
-            <p>We specialise in creating thoughtful, engaging and clear branding solutions, that resonate with people</p>
-            <button>Show cases <span>&#10142;</span></button>
-
+            <p class='slider-paragraph'>We specialise in creating thoughtful, engaging and clear branding solutions, that resonate with people</p>
+            <button class='slider-button' id='button-1'>Show cases <span>&#10142;</span></button>
             <ul>
               <li>Brand Identity</li>
               <li>Brandbooks</li>
@@ -144,7 +145,7 @@
             </ul>
           </div>
           <div class="col-lg-5 col-1 slide__content_img">
-            <img src="img/brandIdentity.png" alt="">
+            <img class='slide_img' src="img/brandIdentity.png" alt="">
             <a href="#">Marketing <span>&#8594;</span> </a>
             <hr>
             <div class="points">
@@ -155,6 +156,15 @@
             </div>
           </div>
         </div>
+
+        <div class="portfolio brands row">
+          <div class="col-12">
+            <img src="img/brand-1.png" alt="">
+            <img src="img/brand-2.png" alt="">
+            <img src="img/brand-3.png" alt="">
+            <img src="img/brand-4.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -163,5 +173,7 @@
   <script src='js/labels.js'></script>
   <script src='js/scroll.js'></script>
   <script src='js/hovers.js'></script>
+  <script src='js/toggle.js'></script>
+  <script src='js/slide.js'></script>
 </body>
 </html>

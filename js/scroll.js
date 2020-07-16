@@ -13,7 +13,7 @@ $(document).ready(function(){
     triggerElement: '#about',
     triggerHook: .7
   })
-  .setClassToggle('.nav-span', 'span-white')
+  .setClassToggle('.toggle-white', 'toggle-white-active')
   // .addIndicators()
   .addTo(controller);
 
