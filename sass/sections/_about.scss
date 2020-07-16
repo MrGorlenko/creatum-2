@@ -112,3 +112,9 @@ $fixing-padding: 5px;
     }
   }
 }
+
+@media (max-width: 576px){
+  .about{
+    height: 75vh;
+  }
+}
