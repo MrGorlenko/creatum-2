@@ -1017,20 +1017,6 @@ header {
   }
 }
 
-.section {
-  width: calc(100%/2);
-}
-
-.sections {
-  width: 200%;
-  display: flex;
-}
-
-.slider-container {
-  position: relative;
-  max-width: 1440px !important;
-}
-
 .invisible-slide {
   opacity: 0;
   transition: .3s ease;

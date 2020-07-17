@@ -29,6 +29,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   <header id='header'>
@@ -131,84 +136,88 @@
 
   <section class="slider" id="js-wrapper" >
 
-    <div class="sections" id="js-slideContainer">
-      <section class="section slide">
-        <div class="slider-container container-xl h-100">
-          <div class="row h-100">
-            <div class="col-lg-7 col-11 slide__content">
-              <p>Our services</p>
-              <h3>Brand Identity & Design</h3>
-              <p class='slider-paragraph'>We specialise in creating thoughtful, engaging and clear branding solutions, that resonate with people</p>
-              <button class='slider-button' id='button-1'>Show cases <span>&#10142;</span></button>
-              <ul>
-                <li>Brand Identity</li>
-                <li>Brandbooks</li>
-                <li>Graphic Design</li>
-              </ul>
-            </div>
-            <div class="col-lg-5 col-1 slide__content_img">
-              <img class='slide_img' src="img/brandIdentity.png" alt="">
-              <a href="#">Marketing <span>&#8594;</span> </a>
-              <hr>
-              <div class="points">
-                <img src="img/rhoms-green.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
+      <div id='swiperContainer' class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="section slide">
+              <div class="slider-container container-xl h-100">
+                <div class="row h-100">
+                  <div class="col-lg-7 col-11 slide__content">
+                    <p>Our services</p>
+                    <h3>Brand Identity & Design</h3>
+                    <p class='slider-paragraph'>We specialise in creating thoughtful, engaging and clear branding solutions, that resonate with people</p>
+                    <button class='slider-button' id='button-1'>Show cases <span>&#10142;</span></button>
+                    <ul>
+                      <li>Brand Identity</li>
+                      <li>Brandbooks</li>
+                      <li>Graphic Design</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-5 col-1 slide__content_img">
+                    <img class='slide_img' src="img/brandIdentity.png" alt="">
+                    <a href="#">Marketing <span>&#8594;</span> </a>
+                    <hr>
+                    <div class="points">
+                      <img src="img/rhoms-green.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="portfolio brands row">
+                  <div class="col-12">
+                    <img src="img/brand-1.png" alt="">
+                    <img src="img/brand-2.png" alt="">
+                    <img src="img/brand-3.png" alt="">
+                    <img src="img/brand-4.png" alt="">
+                  </div>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
-  
-          <div class="portfolio brands row">
-            <div class="col-12">
-              <img src="img/brand-1.png" alt="">
-              <img src="img/brand-2.png" alt="">
-              <img src="img/brand-3.png" alt="">
-              <img src="img/brand-4.png" alt="">
-            </div>
+          <div class="swiper-slide">
+            <section class="section slide">
+              <div class="slider-container container-xl h-100">
+                <div class="row h-100">
+                  <div class="col-lg-7 col-11 slide__content">
+                    <p>Our services</p>
+                    <h3>Marketing</h3>
+                    <p class='slider-paragraph'>We develop and lead digital marketing campaigns. Strategies always reflect clients' business goals aligned with a unique personalised style solution, which is why we have high "client return" rate.</p>
+                    <button class='slider-button' id='button-1'>Show cases <span>&#10142;</span></button>
+                    <ul>
+                      <li>Trafic</li>
+                      <li>Digital creative</li>
+                      <li>SMM</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-5 col-1 slide__content_img">
+                    <img class='slide_img marketing' src="img/marketing.png" alt="">
+                    <a href="#">Websites <span>&#8594;</span> </a>
+                    <hr>
+                    <div class="points">
+                      <img src="img/rhoms-green.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                      <img src="img/rhomb.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="portfolio brands row">
+                  <div class="col-12">
+                    <img src="img/brand-1.png" alt="">
+                    <img src="img/brand-2.png" alt="">
+                    <img src="img/brand-3.png" alt="">
+                    <img src="img/brand-4.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
-
-      <section class="section slide">
-        <div class="slider-container container-xl h-100">
-          <div class="row h-100">
-            <div class="col-lg-7 col-11 slide__content">
-              <p>Our services</p>
-              <h3>Marketing</h3>
-              <p class='slider-paragraph'>We develop and lead digital marketing campaigns. Strategies always reflect clients' business goals aligned with a unique personalised style solution, which is why we have high "client return" rate.</p>
-              <button class='slider-button' id='button-1'>Show cases <span>&#10142;</span></button>
-              <ul>
-                <li>Trafic</li>
-                <li>Digital creative</li>
-                <li>SMM</li>
-              </ul>
-            </div>
-            <div class="col-lg-5 col-1 slide__content_img">
-              <img class='slide_img marketing' src="img/marketing.png" alt="">
-              <a href="#">Websites <span>&#8594;</span> </a>
-              <hr>
-              <div class="points">
-                <img src="img/rhoms-green.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
-                <img src="img/rhomb.svg" alt="">
-              </div>
-            </div>
-          </div>
-  
-          <div class="portfolio brands row">
-            <div class="col-12">
-              <img src="img/brand-1.png" alt="">
-              <img src="img/brand-2.png" alt="">
-              <img src="img/brand-3.png" alt="">
-              <img src="img/brand-4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
+      </div>
 
   </section>
 
