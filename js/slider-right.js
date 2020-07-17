@@ -6,7 +6,8 @@ $(document).ready(function(){
     direction: 'horizontal',
     touchReleaseOnEdges: true,
     mousewheel: true,
-    loop: false
+    loop: false,
+    
   });
 
 
